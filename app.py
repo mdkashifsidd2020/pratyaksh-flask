@@ -5,7 +5,7 @@ import csv
 from datetime import datetime
 import pandas as pd
 import requests # For making requests to external APIs (like Gemini, or a real translation API)
-
+from config import FLASK_SECRET_KEY
 from utils.gemini_api import ask_gemini
 from utils.auth import auth_blueprint, USER_CSV # Import USER_CSV from auth
 import sys
